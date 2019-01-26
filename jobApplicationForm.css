@@ -1,0 +1,37 @@
+div {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+li {
+    list-style: none;
+}
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif  
+}
+
+legend {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+}
+
+fieldset {
+    border-color: magenta;
+}
+
+h1 {
+    text-shadow: 2px 2px lightcoral;
+    background-color: bisque;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    text-align: center;
+}
+ 
+input[type="submit"] {
+    margin-top: 1em;
+    font-size: 2em;
+    border-radius: 25px;
+    color: brown;
+    background-color: aquamarine;
+}

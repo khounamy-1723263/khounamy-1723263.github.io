@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="jobApplicationForm.css">
+	<title>Job Application</title>
+</head>
+
+<body>
+	<h1>Job Application</h1>
+	<form name = input action="http://gclass.alexburner.com/formtest.php" method="post">
+
+		<fieldset>
+			<legend>Account</legend>
+			<div>
+				<label>Username:</label>
+				<input type="text" name="username">
+			</div>
+			<div>
+				<label>Password:</label>
+				<input type="password" name="pwd">
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Personal Information</legend>
+			<div>
+				<label>First Name:</label><br>
+				<input type="text" name="firstname"><br>
+				<label>Last Name:</label><br>
+				<input type="text" name="lastname">
+			</div>
+			
+			<div>
+				<label>Gender:</label><br>
+				<input type="radio" name="gender" value="male" checked> Male<br>
+				<input type="radio" name="gender" value="female"> Female<br>
+				<input type="radio" name="gender" value="other"> Other
+			</div>
+
+			<div>
+				<label>Birthday:</label>
+				<input type="date" name="bday">
+			</div>
+			<div>
+					<label>Resume:</label>
+					<input type="file" name="resume">
+				</div>
+		</fieldset>
+		<fieldset>
+			<legend>History</legend>
+			<div>
+				<label>Have you ever been involved in: (Check all that apply)</label>
+				<ul>
+					<li><input type="checkbox" name="dui" value="dui">DUI</li>
+					<li><input type="checkbox" name="arrested" value="arrested">Arrested</li>
+					<li><input type="checkbox" name="stealing" value="stealing">Stealing</li>
+					<li><input type="checkbox" name="murder" value="murder">Murder</li>
+				</ul>
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Initial Screening</legend>
+			<div>
+				<label>Select your favorite color:</label>
+				<input type="color" name="favcolor">
+			</div>
+			<div>
+				<label>How would you rate your honesty? (between 1 and 5):</label>
+				<input type="number" name="honestyrating" min="1" max="5">
+			</div>
+			<div>
+				<label>Tell us about a time you had trouble in a past work environment</label>
+				<br>
+				<textarea name="trouble"></textarea>
+			</div>
+			<div>
+				<label>Preferred Area?</label>
+				<select name="area">
+						<option value="seattle">Seattle</option>
+						<option value="bellevue">Bellevue</option>
+						<option value="tacoma">Tacoma</option>
+						<option value="fife">Fife</option>
+					  </select>
+			</div>
+		</fieldset>
+		<input type="submit" value="Submit form">
+	</form>
+</body>
+
+</html>
